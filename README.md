@@ -1,8 +1,15 @@
 Install script for @OpenStack Swift.
 
-Should be run on a **clean** Ubuntu 12.04 install. 
+Should be run on a **clean** Ubuntu 12.04 install.
 
 Will run swift by default.  After reboots, run `/root/bin/startmain` to start swift.
+
+Recommended that you use @OpenStack/python-swiftclient as a client API:
+```
+git clone https://github.com/openstack/python-swiftclient
+cd python-swiftclient
+python setup.py
+```
 
 # Check that swift works
 ```
