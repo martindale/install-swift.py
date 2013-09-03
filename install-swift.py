@@ -12,8 +12,9 @@ http://swift.openstack.org/development_saio.html
 This script will use a loopback device for storage.
 run this script as root.
 
-Tested under ubuntu 11.10.
-By jadesoul <wslgb2006@gmail.com>
+Tested under ubuntu 12.04.
+Originally by jadesoul <wslgb2006@gmail.com>
+Updates by martindale <eric@ericmartindale.com>
 '''
 
 def fread(path):
