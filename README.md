@@ -36,13 +36,18 @@ Date: Thu, 31 May 2012 15:49:34 GMT
 curl -k -X GET -H 'X-Auth-Token: AUTH_tkbf3cb494b8f749b7b34b6d26ac74297b' http://127.0.0.1:8080/v1/AUTH_test/images
 
 curl -k -X GET -H 'X-Auth-Token: AUTH_tkbf3cb494b8f749b7b34b6d26ac74297b' http://127.0.0.1:8080/v1/AUTH_test/images?format=xml
+```
 
-#create container and upload object
+##create container and upload object
+```
 curl -k -X PUT -T ./test.data -H 'Content-Type: text/plain' -H 'X-Auth-Token: AUTH_tkbf3cb494b8f749b7b34b6d26ac74297b' http://127.0.0.1:8080/v1/AUTH_test/images/test.data
 curl -k -X PUT -H 'Content-Type: text/plain' -H 'X-Auth-Token: AUTH_tkbf3cb494b8f749b7b34b6d26ac74297b' http://127.0.0.1:8080/v1/AUTH_test/images
+```
 
-#download object
+##download object
+```
 curl -k -X GET -H 'X-Auth-Token: AUTH_tkbf3cb494b8f749b7b34b6d26ac74297b' http://127.0.0.1:8080/v1/AUTH_test/images/test.data -o test2.data
 curl -k -X GET -H 'X-Auth-Token: AUTH_tkbf3cb494b8f749b7b34b6d26ac74297b' http://127.0.0.1:8080/v1/AUTH_test/images/.bashrc
 ```
 
+TODO: initscripts
